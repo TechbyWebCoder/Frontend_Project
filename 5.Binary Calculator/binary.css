@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.jumbotron {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#output {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    min-height: 40px;
+}
+
+button {
+    width: 70px;
+    height: 50px;
+    font-size: 18px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button.btn-light {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+button.btn-light:hover {
+    background-color: #e2e6ea;
+}
+
+button.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+button.btn-danger:hover {
+    background-color: #c82333;
+}
+
+button.btn-warning {
+    background-color: #ffc107;
+    color: #000;
+}
+
+button.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+button.btn-info {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+button.btn-info:hover {
+    background-color: #138496;
+}
+
+button.btn-success {
+    background-color: #28a745;
+    color: #fff;
+    width: 100%;
+}
+
+button.btn-success:hover {
+    background-color: #218838;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+}
