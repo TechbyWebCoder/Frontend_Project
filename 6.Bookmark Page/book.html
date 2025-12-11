@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Page</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <header>
+        <h1>My Bookmarks</h1>
+    </header>
+    <main>
+        <section class="bookmark-form">
+            <input 
+                type="url" 
+                name="url" 
+                id="urlInput" 
+                placeholder="Enter URL" 
+                pattern="https://.*" 
+                size="50" 
+                required>
+            <button id="addBookmark">Add Bookmark</button>
+            <button id="deleteAll">Delete All Bookmarks</button>
+        </section>
+        <section class="bookmarks">
+            <ul id="bookmarkList">
+            </ul>
+        </section>
+    </main>
+    <script src="book.js"></script>
+</body>
+</html>
