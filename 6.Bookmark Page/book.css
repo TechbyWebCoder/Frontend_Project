@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.bookmark-form {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.bookmark-form input[type="url"] {
+    padding: 0.5rem;
+    width: 300px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.bookmark-form button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+#addBookmark {
+    background-color: #28a745;
+}
+
+#addBookmark:hover {
+    background-color: #218838;
+}
+
+#deleteAll {
+    background-color: #dc3545;
+}
+
+#deleteAll:hover {
+    background-color: #c82333;
+}
+
+.bookmarks {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.bookmarks ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bookmarks ul li {
+    background-color: #fff;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bookmarks ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.bookmarks ul li a:hover {
+    text-decoration: underline;
+}
+
+.bookmarks ul li button {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    margin: 5px;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bookmarks ul li button:hover {
+    background-color: #c82333;
+}
