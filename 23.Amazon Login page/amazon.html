@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Login</title>
+    <link rel="stylesheet" href="amazon.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" class="logo">
+            <h1>Sign-In</h1>
+            <div class="form-group">
+                <label for="email">Email or mobile phone number</label>
+                <input type="text" id="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="button" value="Sign-In" class="login-button" onclick="validateLogin()">
+            </div>
+            <div class="help-links">
+                <a href="#">Forgot your password?</a>
+                <a href="#">Other issues with Sign-In</a>
+            </div>
+            <hr>
+            <div class="new-account">
+                <p>New to Amazon?</p>
+                <a href="#" class="create-account-button">Create your Amazon account</a>
+            </div>
+        </div>
+    </div>
+    <script src="amazon.js"></script>
+</body>
+</html>
