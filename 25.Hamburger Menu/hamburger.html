@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hamburger Menu</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="hamburger.css" />
+</head>
+<body>
+  <div style="text-align: center; color: white; margin-bottom: 20px;">
+    <h1>Hamburger Menu</h1>
+  </div>
+  <div style="text-align: center;">
+    <button class="hamburger hamburger--emphatic" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </div>
+  <script>
+    var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function() {
+      hamburger.classList.toggle("is-active");
+    });
+  </script>
+</body>
+</html>
