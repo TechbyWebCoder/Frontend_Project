@@ -98,7 +98,7 @@ Below is the list of projects along with **Live Demo links** (hosted using GitHu
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/frontend-project.git
+   git clone https://github.com/TechbyWebCoder/Frontend_Project.git
    ```
 2. Open any project folder.
 3. Run the project by opening the `index.html` file in your browser.
