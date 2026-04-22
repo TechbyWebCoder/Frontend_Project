@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Resizer and Compressor</title>
+    <link rel="stylesheet" href="image.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Image Resizer and Compressor</h1>
+        <div class="image-upload">
+            <label for="imageInput" class="upload-label">
+                <i class="fas fa-cloud-upload-alt"></i> Upload an Image
+            </label>
+            <input type="file" id="imageInput" accept="image/*">
+        </div>
+        
+        <div id="action-form" style="display: none;">
+            <div class="output">
+                <h2 class="preview-label">Preview:</h2>
+                <img id="preview" alt="Preview">
+                <p id="image-dimensions" style="margin-top: 10px;"></p>
+            </div>
+            
+            <div class="controls">
+                <div class="control-group">
+                    <label for="resizeUnit">Unit:</label>
+                    <select id="resizeUnit">
+                        <option value="pixels">Pixels</option>
+                        <option value="percentage">Percentage</option>
+                    </select>
+                </div>
+                
+                <div class="control-group" id="pixel-dimensions">
+                    <label for="resizeWidth">Width:</label>
+                    <input type="number" id="resizeWidth" placeholder="Width">
+                    <span>px</span>
+                </div>
+                
+                <div class="control-group" id="percentage-dimensions" style="display: none;">
+                    <label for="resizePercentage">Percent:</label>
+                    <input type="number" id="resizePercentage" placeholder="Percentage" min="1" max="100">
+                    <span>%</span>
+                </div>
+                
+                <div class="control-group" id="pixel-height-dimensions">
+                    <label for="resizeHeight">Height:</label>
+                    <input type="number" id="resizeHeight" placeholder="Height">
+                    <span>px</span>
+                </div>
+                
+                <div class="control-group quality-group">
+                    <label for="quality">Quality:</label>
+                    <input type="range" id="quality" min="1" max="100" value="80">
+                    <span id="quality-value" class="quality-value">80</span>
+                </div>
+                
+                <button id="resizeButton">Resize & Compress</button>
+                <a id="downloadButton" class="download-button" style="display: none;">Download Compressed Image</a>
+            </div>
+        </div>
+    </div>
+    <script src="image.js"></script>
+</body>
+</html>
