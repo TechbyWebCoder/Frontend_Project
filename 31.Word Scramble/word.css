@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; 
+    color: #fff; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.root {
+    text-align: center;
+    background-color: #1c1c1c; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#scrambled {
+    margin-bottom: 20px;
+}
+
+#scrambleWord {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#hint {
+    font-size: 14px;
+    color: #ccc;
+}
+
+#form {
+    margin-bottom: 20px;
+}
+
+#input {
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 16px;
+}
+
+#output {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6700;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
