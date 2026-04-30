@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  color: #000;
+  background-color: #000;
+}
+
+a {
+  text-decoration: none;
+  font-family: sans-serif;
+  text-transform: lowercase;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: 60px;
+  padding: 0 15px 15px;
+  border-radius: 10px 10px 30px 30px;
+  background-color: #222121;
+  box-shadow: 0px 6px 18px 0px #ff0000;
+  margin: 10px;
+}
+
+.menu .nav-item {
+  position: relative;
+}
+
+.menu .nav-item .tab-title {
+  display: none;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 12px;
+  background: #444;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  width: max-content;
+  text-transform: capitalize;
+}
+
+.menu .nav-item .tab-title:before {
+  content: "";
+  position: absolute;
+  border-color: #444 transparent transparent transparent;
+  border-style: solid;
+  border-width: 6px;
+  width: 0px;
+  height: 0px;
+  bottom: -12px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.menu .nav-item:hover .tab-title {
+  display: block;
+}
+
+.menu .checkbox {
+  background-color: #222;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.menu .checkbox:before {
+  content: "";
+  width: 80px;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  top: -30px;
+  left: 0;
+  position: absolute;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background-color: #7e57c2;
+  transition: all 0.2s linear;
+  border: 4px solid #222;
+}
+
+.menu .checkbox:after {
+  content: "+";
+  position: absolute;
+  font-size: 4em;
+  color: #fff;
+  top: -30px;
+  left: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s linear;
+}
+
+.menu .checkbox:checked + * {
+  top: -100px;
+  transform: rotate(0deg);
+}
+
+.menu .checkbox:checked + * .nav-item {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 0;
+  transform: translate(-50%, -15px);
+}
+
+.menu .checkbox:checked + * .nav-item:hover .tab-title {
+  display: block !important;
+}
+
+.menu .checkbox:checked + * .nav-item > i {
+  color: #fff;
+  display: block;
+  transition: all 0.5s linear;
+}
+
+.menu .checkbox:checked + * .nav-item:nth-child(1) {
+  background-color: #ff5252;
+  top: 0px;
+  left: -90px;
+}
+
+.menu .checkbox:checked + * .nav-item:nth-child(2) {
+  background-color: #ab47bc;
+  left: 0;
+  top: -40px;
+}
+
+.menu .checkbox:checked + * .nav-item:nth-child(3) {
+  background-color: #5e35b1;
+  top: 0px;
+  left: 90px;
+}
+
+.menu .checkbox:checked:before {
+  background-color: #222;
+  box-shadow: 0 0 10px #000;
+}
+
+.menu .checkbox:checked:after {
+  transform: translate(-50%, -50%) rotate(45deg);
+  color: #bbb;
+}
+
+.menu .checkbox-list {
+  position: absolute;
+  top: 0;
+  display: block;
+  z-index: 0;
+  transform: rotate(-90deg) translate(0, -50%);
+  transition: all 0.1s linear;
+}
+
+.menu .checkbox-list .nav-item {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  aspect-ratio: 1;
+  position: absolute;
+  transform: translate(15px, -50%);
+  transition: all 0.2s linear;
+}
+
+.menu .checkbox-list .nav-item .tab-title {
+  display: none;
+}
+
+.menu .checkbox-list .nav-item > i {
+  color: #fff;
+  display: block;
+}
+
+.menu .checkbox-list .nav-item:nth-child(1) {
+  background-color: #ff5252;
+  left: -72px;
+}
+
+.menu .checkbox-list .nav-item:nth-child(2) {
+  background-color: #ab47bc;
+  left: -68px;
+}
+
+.menu .checkbox-list .nav-item:nth-child(3) {
+  background-color: #5e35b1;
+  left: -64px;
+}
